@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Webshop | Ecommerce Website Design </title>
+  <title>AWEAR | Ecommerce Website </title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,10 +15,10 @@
   <div class="container">
     <div class="navbar">
       <div class="logo">
-        <img src="Images/logo.jpg" width="350px">
+        <img src="Images/logo.jpg" width="125px">
       </div>
       <nav>
-        <ul>
+        <ul id="MenuItems">
           <li><a href="">Kezdőlap</a></li>
           <li><a href="">Termékek</a></li>
           <li><a href="">Kontakt</a></li>
@@ -26,6 +26,7 @@
         </ul>
       </nav>
       <img src="Images/cart.png" width="30px" height="30px">
+      <img src="Images/menu-oval.png" class="menu-icon" onclick="menutoggle()">
     </div>
     <div class="row">
       <div class="col-2">
@@ -206,7 +207,143 @@
           </div>
   </div>
   
+  <!----- offer ------>
+             
+      <div class="offer">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-2">
+                <img src="Images/exkl%C3%BAz%C3%ADv.jpg" class="offer-img">
+              </div>
+              <div class="col-2">
+                <p> Exklúzív ajánlat</p>
+                <h1>ROLEX | OYSTER PERPETUAL</h1>
+                <small>You need a watch that looks as timeless as you do. And how can you expect sleek design without turning to Rolex? This 2020 unworn Datejust 31mm boasts an automatic movement and two-tone design constructed from stainless steel and rose gold. This piece takes the cake...and punctually.</small>
+                <a href="" class="button"> Megrendelem &#8594;</a>
+              </div>
+                
+            </div>
+        </div>
+     </div>
   
-  
+             
+   <!-------- testimonial -------->
+      <div class="testimonial">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>Lorem Ipsum is simply dummy text of the printing and typsetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+              <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              </div>
+              <img src="Images/felhaszn%C3%A1l%C3%B3-1.jpg">
+              <h3>Eric Joel Tutuc</h3>
+            </div>
+             <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>Lorem Ipsum is simply dummy text of the printing and typsetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+              <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              </div>
+              <img src="Images/felhaszn%C3%A1l%C3%B3-3.jpeg">
+              <h3>Szimonetta Simon</h3>
+            </div>
+             <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+              <p>Lorem Ipsum is simply dummy text of the printing and typsetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+              <div class="rating">
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              <i class="fa fa-star" ></i>
+              </div>
+              <img src="Images/felhaszn%C3%A1l%C3%B3-2.jpg">
+              <h3>Marcell Goldberger</h3>
+            </div>
+          </div>
+         </div>   
+        </div>
+    <!---------- márkák ---------->         
+          <div class="brands">
+             <div class="small-container">
+              <div class="row">
+               <div class="col-5">
+                  <img src="Images/m%C3%A1rka-logo-1.jpg">
+                </div>
+                <div class="col-5">
+                  <img src="Images/m%C3%A1rka-logo-2.png">
+                </div>
+                <div class="col-5">
+                  <img src="Images/m%C3%A1rka-logo-3.jpg">
+                </div>
+                <div class="col-5">
+                  <img src="Images/m%C3%A1rka-logo-4.png">
+                </div>
+                <div class="col-5">
+                  <img src="Images/m%C3%A1rka-logo-5.png">
+                </div>
+               </div>
+            </div>
+          </div>
+  <!---------- footer ---------->
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3>Ide még nem tudom mi jön</h3>
+                <p>Ahogy ide sem tudom még mi jön</p>
+              </div>
+              <div class="footer-col-2">
+                <img src="Images/logo.jpg">
+                <p>Küldetésünk szöveg helye</p>
+              </div>
+              <div class="footer-col-3">
+                <h3>Hasznos Linkek</h3>
+                <ul>
+                  <li>Kuponok</li>
+                  <li>Visszatérítés</li>
+                  <li>Együttműködés</li>
+                </ul>
+              </div>
+              <div class="footer-col-4">
+                <h3>Kövess Minket</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Tiktok</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 | AWEAR</p>
+          </div>
+        </div>
+  <!---------- js for toggle menu ---------->
+        <script>
+             var MenuItmes = document.getElementById("MenuItems");
+            
+             MenuItems.style.maxHeight = "0px";
+          
+             function menutoggle(){
+                  if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                  else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+             }
+             </script>
 </body>
 </html>
