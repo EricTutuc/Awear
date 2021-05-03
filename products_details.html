@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" contet="width=device-width, initial-scale=1.0">
+  <title>Minden Termék - AWEAR </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+</head>
+<body>
+  
+  <div class="header">
+       
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="Images/logo.jpg" width="200px"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="products.html">Termékek</a></li>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="account.html">Belépés/Regisztráció</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="Images/cart.png" width="30px" height="30px"></a>
+      <img src="Images/menu-oval.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   
+  </div>
+  </div>
+  
+ 
+
+  <!----- termék részletek ------>  
+  
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="Images/gallery-1.jpg" width="100%" id="ProductImg">
+          
+          <div class="small-img-row">
+            <div class="small-img-col">
+             <img src="Images/gallery-1.jpg" width="100%" class="small-img">
+            </div>
+             <div class="small-img-col">
+             <img src="Images/gallery-2.jpg" width="100%" class="small-img">
+            </div>
+             <div class="small-img-col">
+             <img src="Images/gallery-3.jpg" width="100%" class="small-img">
+            </div>
+             <div class="small-img-col">
+             <img src="Images/gallery-4.jpg" width="100%" class="small-img">
+            </div>
+          </div>
+          
+          
+          
+        </div>
+        <div class="col-2">
+        <p>Kezdőlap / Póló</p>
+        <h1>Piros nyomtatott póló | férfi </h1>
+        <h4> 5.990 Ft</h4>
+        <select>
+          <option>Méret választás</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>2XL</option>
+        </select>
+        <input type="number" value="1">
+        <a href="" class="button">Kosárba helyezés</a>
+        
+        <h3>Termék részletek <i class="fa fa-indent" aria-hidden="true"></i></h3>
+        <br>
+        <p> A ternék részletes leírásának helye</p>
+        </div>
+      </div>
+    </div>
+  
+<!----------cím--------->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Hasonló Termékek</h2>
+        <p>Több megtekintése</p>
+      </div>
+  </div>
+  
+     <div class="small-container">
+       <div class="row row-2">
+       </div>
+        <div class="row">
+          <div class="col-4">
+            <img src="Images/fekete%20szett.jpg">
+            <h4></h4>
+            <div class="rating">
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="Images/featured%20lingerie.jpg">
+            <h4></h4>
+          </div>
+          <div class="col-4">
+            <img src="Images/grey%20lingerie.jpg">
+            <h4></h4>
+          </div>
+          <div class="col-4">
+            <img src="Images/orange%20swimsuit.jpg">
+            <h4></h4>
+            
+          </div>
+       </div>
+        
+         
+  </div>
+  
+  <!---------- footer ---------->
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3>Ide még nem tudom mi jön</h3>
+                <p>Ahogy ide sem tudom még mi jön</p>
+              </div>
+              <div class="footer-col-2">
+                <img src="Images/logo.jpg">
+                <p>Küldetésünk szöveg helye</p>
+              </div>
+              <div class="footer-col-3">
+                <h3>Hasznos Linkek</h3>
+                <ul>
+                  <li>Kuponok</li>
+                  <li>Visszatérítés</li>
+                  <li>Együttműködés</li>
+                </ul>
+              </div>
+              <div class="footer-col-4">
+                <h3>Kövess Minket</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Tiktok</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 | AWEAR</p>
+          </div>
+        </div>
+ 
+  <!---------- js for toggle menu ---------->
+        <script>
+             var MenuItems = document.getElementById("MenuItems");
+            
+             MenuItems.style.maxHeight = "0px";
+          
+             function menutoggle(){
+                  if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                  else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+             }
+             </script>
+  
+  <!---------- js for termék részletek ---------->
+<script>
+  var ProductImg = document.getElementById("ProductImg");
+  var SmallImg = document.getElementsByClassName("small-img");
+  
+    SmallImg[0].onclick = function()
+    {
+      ProductImg.src = SmallImg[0].src;
+    }
+     SmallImg[1].onclick = function()
+    {
+      ProductImg.src = SmallImg[1].src;
+    }
+      SmallImg[2].onclick = function()
+    {
+      ProductImg.src = SmallImg[2].src;
+    }
+      SmallImg[3].onclick = function()
+    {
+      ProductImg.src = SmallImg[3].src;
+    }
+     
+  </script>
+    
+  
+</body>
+</html>

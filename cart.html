@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" contet="width=device-width, initial-scale=1.0">
+  <title>Minden Termék - AWEAR </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+</head>
+<body>
+  
+  <div class="header">
+       
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="Images/logo.jpg" width="200px"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="Images/">Kezdőlap</a></li>
+          <li><a href="products.html">Termékek</a></li>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="account.html">Belépés/Regisztráció</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="Images/cart.png" width="30px" height="30px"></a>
+      <img src="Images/menu-oval.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   
+  </div>
+  </div>
+  
+  <!---------- kosár termékek részletek ---------->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+            <th>Termék</th>
+            <th>Mennyiség</th>
+            <th>Végösszeg</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                  <img src="Images/buy-2.jpg">
+                   <div>
+                    <p>Puma póló | piros | férfi</p>
+                    <small>Ár: 5.990 Ft</small>
+                    <br>
+                    <a href="">Eltávolít</a>
+                  </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></input></td>
+            <td>5.990 Ft</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                  <img src="Images/buy-1.jpg">
+                   <div>
+                    <p>Puma póló | piros | férfi</p>
+                    <small>Ár: 9.990 Ft</small>
+                    <br>
+                    <a href="">Eltávolít</a>
+                  </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></input></td>
+            <td>5.990 Ft</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                  <img src="Images/buy-3.jpg">
+                   <div>
+                    <p>Puma póló | piros | férfi</p>
+                    <small>Ár: 9.990 Ft</small>
+                    <br>
+                    <a href="">Eltávolít</a>
+                  </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></input></td>
+            <td>5.990 Ft</td>
+        </tr>
+      </table>
+    <div class="total-price">
+      
+        <table>
+            <tr>
+              <td>Részösszeg</td>
+              <td>25.970 Ft</td>
+            </tr>
+            <tr>
+              <td>Szállítási költség</td>
+              <td>990 Ft</td>
+            </tr>
+            <tr>
+              <td>Végösszeg</td>
+              <td>26.960 Ft</td>
+            </tr>
+        </table>
+   </div>
+</div>
+  <!---------- footer ---------->
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3>Ide még nem tudom mi jön</h3>
+                <p>Ahogy ide sem tudom még mi jön</p>
+              </div>
+              <div class="footer-col-2">
+                <img src="Images/logo.jpg">
+                <p>Küldetésünk szöveg helye</p>
+              </div>
+              <div class="footer-col-3">
+                <h3>Hasznos Linkek</h3>
+                <ul>
+                  <li>Kuponok</li>
+                  <li>Visszatérítés</li>
+                  <li>Együttműködés</li>
+                </ul>
+              </div>
+              <div class="footer-col-4">
+                <h3>Kövess Minket</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Tiktok</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 | AWEAR</p>
+          </div>
+        </div>
+ 
+  <!---------- js for toggle menu ---------->
+        <script>
+             var MenuItems = document.getElementById("MenuItems");
+            
+             MenuItems.style.maxHeight = "0px";
+          
+             function menutoggle(){
+                  if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                  else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+             }
+       </script>
+    
+  
+</body>
+</html>

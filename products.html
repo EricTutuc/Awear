@@ -16,17 +16,17 @@
   <div class="container">
     <div class="navbar">
       <div class="logo">
-        <img src="Images/logo.jpg" width="200px">
+        <a href="index.html"><img src="Images/logo.jpg" width="200px"></a>
       </div>
       <nav>
         <ul id="MenuItems">
-          <li><a href="">Kezdőlap</a></li>
-          <li><a href="">Termékek</a></li>
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="products.html">Termékek</a></li>
           <li><a href="">Kontakt</a></li>
-          <li><a href="">Belépés/Regisztráció</a></li>
+          <li><a href="account.html">Belépés/Regisztráció</a></li>
         </ul>
       </nav>
-      <img src="Images/cart.png" width="30px" height="30px">
+      <a href="cart.html"><img src="Images/cart.png" width="30px" height="30px"></a>
       <img src="Images/menu-oval.png" class="menu-icon" onclick="menutoggle()">
     </div>
    
@@ -35,9 +35,18 @@
   
  
 
-  <!----- featured products ------>  
+  <!----- minden termék ------>  
      <div class="small-container">
-        <h2 class="title">Kiemelt Termékek</h2>
+       <div class="row row-2">
+        <h2>Minden Termék</h2>
+        <select>
+          <option>Alapértelmezett</option>
+          <option>Ár szerint növekvő</option>
+          <option>Ár szerint csökkenő</option>
+          <option>Értékelés</option>
+          <option>Népszerű</option>
+         </select>
+       </div>
         <div class="row">
           <div class="col-4">
             <img src="Images/featured%20lingerie.jpg">
@@ -75,8 +84,8 @@
             <p>9.990 Ft</p>
           </div>
           <div class="col-4">
-            <img src="Images/sunglasses.jpg">
-            <h4>Napszemüveg | (márkanév) </h4>
+            <img src="Images/product-1.jpg">
+            <h4>Piros nyomtatott póló | férfi</h4>
             <div class="rating">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -84,7 +93,110 @@
             </div>
             <p>12.500 Ft</p>
           </div>
-       </div>     
+       </div>
+        <div class="row">
+          <div class="col-4">
+            <img src="Images/robe.jpg">
+            <h4>Csipkés köntös | selyem</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>15.490 Ft</p>
+          </div>
+          <div class="col-4">
+            <img src="Images/neckless.jpg">
+            <h4>Nyaklánc | Bently </h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>7.990 Ft</p>
+          </div>
+          <div class="col-4">
+            <img src="Images/bralett.jpg">
+            <h4>Csipkés bralett | fekete</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>7.990 Ft</p>
+          </div>
+          <div class="col-4">
+            <img src="Images/fekete%20szett.jpg">
+            <h4>Csipkés fehérnemű szett | fekete </h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>11.490 Ft</p>
+          </div>
+         </div>
+              <div class="row">
+          <div class="col-4">
+            <img src="Images/picture%201.jpg">
+            <h4>Csipkés tanga | 3db</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>9.990 Ft</p>
+          </div>
+          <div class="col-4">
+            <img src="Images/picture%202.jpg">
+            <h4>Csipkés fehérnemű | fekete </h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>11.990 Ft</p>
+          </div>
+          <div class="col-4">
+            <img src="Images/picture%203.jpg">
+            <h4>Csipkés fehérnemű szett | fekete</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>11.990 Ft</p>
+          </div>
+          <div class="col-4">
+            <img src="Images/picture%204.jpg">
+            <h4>Csipkés fehérnemű szett | baby pink </h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>11.990 Ft</p>
+          </div>
+    </div>
+       <div class="page-button">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+       </div>
   </div>
   
   <!---------- footer ---------->
