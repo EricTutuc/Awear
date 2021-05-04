@@ -391,7 +391,7 @@ th:last-child{
     width: 300px;
     height: 400px;
     position: relative;
-    text-align: center;
+  text-align: center;
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
@@ -434,19 +434,19 @@ form .button:focus{
 #LoginForm{
     left: -300px;
 }
-#RegFrom{
+#RegForm{
     left: 0;
 }
 form a{
   font-size: 12px;
 }
 #Indicator{
-    width: 110px;
+    width: 120px;
     border: none;
     background: #000;
     height: 3px;
     margin-top: 8px;
-    transform: translateX(100px);
+    transform: translateX(140px);
     transition: transform 1s;
 }
 

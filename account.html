@@ -46,7 +46,7 @@
             <div class="form-button">
               <span onclick="login()">Bejelentkezés</span>
               <span onclick="register()">Regisztráció</span>
-              <hr id="Indicator">
+              <div id="Indicator"></div>
             </div>
             
             <form id="LoginForm">
@@ -57,7 +57,7 @@
             </form>
             
             
-            <form id="RegFrom">
+            <form id="RegForm">
               <input type="text" placeholder="Fehlasználó név">
               <input type="email" placeholder="E-mail cím">
               <input type="password" placeholder="Jelszó">
@@ -134,13 +134,13 @@
       function register(){
         RegForm.style.transform = "translateX(0px)";
         LoginForm.style.transform = "translateX(0px)";
-        Indicator.style.transformm = "translateX(100px)";
+        Indicator.style.transform = "translateX(140px)";
       }
   
       function login(){
         RegForm.style.transform = "translateX(300px)";
         LoginForm.style.transform = "translateX(300px)";
-        Indicator.style.transformm = "translateX(0px)";
+        Indicator.style.transform = "translateX(10px)";
       }
       
   </script>
