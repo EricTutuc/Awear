@@ -131,7 +131,7 @@ p{
     font-size: 14px;
 }
 .rating .fa{
-    color: #ff523b;
+    color: #000;
 }
 .col-4:hover{
     transform: translateY(-12px);
@@ -172,7 +172,7 @@ small{
 }
 .fa.fa-quote-left{
     font-size: 34px;
-    color: #ff523b
+    color: #555;
 }
 .col-3 p{
     fonts-size: 12px;
