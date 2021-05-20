@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: 'Permanent Marker', cursive;
+  background: url(Images/background-3.jpg);
+  scroll-snap-align: start;
+  background-position: center;
+  background-size: 100%;
+}
+.logo{
+    background: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: none;
+    background: #fff;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+  
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a h4{
+    text-decoration: none;
+    color: #000;
+}
+p{
+    color: #000;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    text-align: center;
+    background: #fff;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: none;
+}
+.col-2 h1{
+    font-size: 70px;
+    line-height: 80px;
+    margin: 0px 0;
+    color: #000;
+}
+.button{
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.button:hover{
+    background: #979797;
+}
+.header{
+    background: none;
+    width: 100%;
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #fff;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    color: #000;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: center;
+    line-height: 60px;
+    color: #000;
+  
+}
+.title::after{
+    content: '';
+    background: #000;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50);
+}
+.h4{
+    color: #000;
+    font-weight:lighter;
+    font-size: 20;
+    font-stretch: expanded;
+}
+.col-4 p{
+    font-size: 14px;
+    color: #000;
+}
+.rating .fa{
+    color: #000;
+}
+.col-4:hover{
+    transform: translateY(-12px);
+}
+
+}
+/*----------footer----------*/
+
+.footer{
+    background: #fff;
+    color: #fff;
+    font-size: 14px;
+    padding: 60px  20px;
+}
+.footer p{
+    color: #000;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 1300px;
+    margin-bottom: 0px;
+    background: #fff;
+}
+.footer-col-1{
+   flex-basis: 30%;
+   background: #fff;
+}
+.footer-col-2{
+   flex: 1;
+   text-align: center;
+   background: #fff;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+    background: #fff;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: #000;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    color: #fff;
+}
+
+/*----------kosár termékek----------*/
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #000;
+    background: #fff;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #fff;
+    width: 100%;
+    max-width: 410px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/*---------- média lekérdezés a menüre ----------*/
+
+ @media only screen and (max-width: 800px){
+  
+  nav ul{
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+  }
+  nav ul li{
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  nav ul li a{
+      color: #fff;
+  }
+  .menu-icon{
+      display: block;
+      cursor: pointer;    
+  } 
+}
+/*---media query for less than 600 screen size---*/
+@media only screen and (max-width: 600px){
+  .row{
+      text-align: center;
+  }
+  .col-2, .col-3, .col-4{
+      flex-basis: 100%;
+  }
+  .single-product .row{
+      text-align: left;
+  }
+  .single-product .col-2{
+      padding: 20px ;
+  }
+  .single-product h1{
+      font-size: 26px;
+      line-height: 32px;
+  }
+  .cart-info p{
+      display: none;
+  }
+}
